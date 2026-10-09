@@ -1,11 +1,32 @@
-# Publish only instructions, scripts, and one selected demo video.
+# Publish instructions, scripts, demo, and LeRobot source.
 *
+
+# Project files
 !.gitignore
 !README.md
 !AGENTS.md
+
+# Scripts
 !scripts/
 !scripts/install.sh
 !scripts/run_orange_juice.sh
+
+# Demos
 !demos/
 !demos/main_orange_juice.mp4
 !demos/main_orange_juice.gif
+
+# LeRobot source code
+!lerobot/
+lerobot/*
+!lerobot/src/
+lerobot/src/*
+!lerobot/src/lerobot/
+!lerobot/src/lerobot/**
+
+# LeRobot dependency configuration
+!lerobot/pyproject.toml
+
+# Exclude generated Python files
+__pycache__/
+*.pyc
